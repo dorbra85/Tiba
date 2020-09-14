@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" formControlName="searchterm" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.searchterm.errors }" />
+                <div *ngIf="submitted && f.searchterm.errors" class="invalid-feedback">
+                    <div *ngIf="f.searchterm.errors.required">SearchTerm is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button [disabled]="loading" class="btn btn-primary">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Search Repositories
+                </button>
+            </div>
+        </form>
+         <mat-form-field appearance="fill">
+            <mat-label>Repositories</mat-label>
+            <mat-select [(ngModel)]="selected"  multiple>
+              <mat-option *ngFor="let repo of reposList" [value]="repo.id">{{repo.name}}</mat-option>
+            </mat-select>
+          </mat-form-field> 
+          <div >
+            <button (click)="saveFavorites()" [disabled]="loading" class="btn btn-primary">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1">Saved Successfully</span>
+                Save Favorites
+            </button>
+        </div>
+    </div>
+</div>
