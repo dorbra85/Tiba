@@ -52,11 +52,7 @@ namespace TibaApi.Controllers
             var items = new List<Model.Repository>();
 
             var productInformation = new ProductHeaderValue("dor");
-            var httpClient = new GitHubClient(productInformation)
-                            {
-                                Credentials = new Credentials("097459a8621fdf63bbcd30d4af13484bee9f4341") 
-                            };
-
+            var httpClient = new GitHubClient(productInformation);
 
             //It was not clear if needed pagination to support more then 100 repository search
             var repositories = await httpClient.Search.SearchRepo(
