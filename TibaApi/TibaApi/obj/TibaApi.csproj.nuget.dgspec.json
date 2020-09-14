@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\D\\interview\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj": {}
+    "C:\\D\\interview\\TibaPrj\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj": {}
   },
   "projects": {
-    "C:\\D\\interview\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj": {
+    "C:\\D\\interview\\TibaPrj\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\D\\interview\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj",
+        "projectUniqueName": "C:\\D\\interview\\TibaPrj\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj",
         "projectName": "TibaApi",
-        "projectPath": "C:\\D\\interview\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj",
+        "projectPath": "C:\\D\\interview\\TibaPrj\\Tiba\\TibaApi\\TibaApi\\TibaApi.csproj",
         "packagesPath": "C:\\Users\\dorb\\.nuget\\packages\\",
-        "outputPath": "C:\\D\\interview\\Tiba\\TibaApi\\TibaApi\\obj\\",
+        "outputPath": "C:\\D\\interview\\TibaPrj\\Tiba\\TibaApi\\TibaApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
